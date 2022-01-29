@@ -1,9 +1,11 @@
 package edu.eci.cvds.patterns.shapes;
 import edu.eci.cvds.patterns.shapes.concrete.*;
 
-
+/**
+** Clase fachada (Patrón fabrica)
+**/
 public class ShapeFactory {
-
+	
     public static Shape create(RegularShapeType type) {
         Shape forma = null;
         switch(type) {
